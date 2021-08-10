@@ -187,8 +187,8 @@ const TodoRedux = (props) => {
                 }
 
                 <ListGroupItem className="glassMor2 mb-2 mt-1">
-                    <div className="d-flex justify-content-between">
-                        <div className="row">
+                    <div className="">
+                        <div className="row d-flex justify-content-between">
                             <div className="col-12 col-sm-12 col-md-6">
                                 <p>Completed: {completed}</p>
                                 <p className="mb-0">Uncompleted: {uncompleted}</p>
