@@ -188,12 +188,14 @@ const TodoRedux = (props) => {
 
                 <ListGroupItem className="glassMor2 mb-2 mt-1">
                     <div className="d-flex justify-content-between">
-                        <div>
-                            <p>Completed: {completed}</p>
-                            <p className="mb-0">Uncompleted: {uncompleted}</p>
-                        </div>
-                        <div className="d-flex justify-content-center align-items-center" onClick={deleteCompleted} >
-                            <Button className="btn btn-warning">Delete Completed</Button>
+                        <div className="row">
+                            <div className="col-12 col-sm-12 col-md-6">
+                                <p>Completed: {completed}</p>
+                                <p className="mb-0">Uncompleted: {uncompleted}</p>
+                            </div>
+                            <div className="col-12 col-sm-12 col-md-6 d-flex justify-content-center align-items-center" onClick={deleteCompleted} >
+                                <Button className="btn btn-warning">Delete Completed</Button>
+                            </div>
                         </div>
                     </div>
                 </ListGroupItem>
